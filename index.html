@@ -56,10 +56,24 @@ READ HERE how to fully customize the messages shown to your members https://gith
                 margin: 0 auto;
             }
         }
+
+        #server-banner {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -999;
+            filter: blur(0.5rem);
+        }
     </style>
 </head>
 
 <body>
+    <div id="server-banner"></div>
     <div class="grid h-screen place-items-center" data-root>
         <div class="flex w-full max-w-2xl flex-col items-center px-6 text-center md:px-10 mt-32">
             <div class="h-9 text-xl mb-32">
